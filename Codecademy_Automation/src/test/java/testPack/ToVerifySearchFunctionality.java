@@ -24,7 +24,7 @@ public class ToVerifySearchFunctionality {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 //		driver.get("https://www.codecademy.com/");
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 		SignUpPage signUpPage= new SignUpPage(driver);
 		signUpPage.clickLogInOption();
