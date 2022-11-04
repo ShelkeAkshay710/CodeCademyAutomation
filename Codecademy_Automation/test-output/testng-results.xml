@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-02T14:27:55 IST" name="CodeCademy Suite" finished-at="2022-11-02T14:28:43 IST" duration-ms="47838">
+    <groups>
+    </groups>
+    <test started-at="2022-11-02T14:27:55 IST" name="TestChrome" finished-at="2022-11-02T14:28:43 IST" duration-ms="47838">
+      <class name="testPack.TNGVerifyLoginAndMyGoalSettingFunctionality">
+        <test-method is-config="true" signature="launchTheBrowser(java.lang.String)[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:27:55 IST" name="launchTheBrowser" finished-at="2022-11-02T14:27:56 IST" duration-ms="1595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:27:57 IST" name="createPOMObjects" finished-at="2022-11-02T14:27:57 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="logIn()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:27:57 IST" name="logIn" finished-at="2022-11-02T14:28:01 IST" duration-ms="4398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method signature="verifyLogin()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:01 IST" name="verifyLogin" finished-at="2022-11-02T14:28:01 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:01 IST" name="logOut" finished-at="2022-11-02T14:28:14 IST" duration-ms="12998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=TNGVerifyLoginAndMyGoalSettingFunctionality.verifyLogin()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="logIn()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:14 IST" name="logIn" finished-at="2022-11-02T14:28:17 IST" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method signature="verifyMyGoalSetting()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:17 IST" name="verifyMyGoalSetting" finished-at="2022-11-02T14:28:23 IST" duration-ms="6766" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at testPack.TNGVerifyLoginAndMyGoalSettingFunctionality.verifyMyGoalSetting(TNGVerifyLoginAndMyGoalSettingFunctionality.java:101)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyGoalSetting -->
+        <test-method is-config="true" signature="logOut(org.testng.ITestResult)[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:23 IST" name="logOut" finished-at="2022-11-02T14:28:26 IST" duration-ms="3062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMyGoalSetting status=FAILURE method=TNGVerifyLoginAndMyGoalSettingFunctionality.verifyMyGoalSetting()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:26 IST" name="clearObjects" finished-at="2022-11-02T14:28:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:testPack.TNGVerifyLoginAndMyGoalSettingFunctionality@4facf68f]" started-at="2022-11-02T14:28:26 IST" name="closeTheBrowser" finished-at="2022-11-02T14:28:43 IST" duration-ms="16262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- testPack.TNGVerifyLoginAndMyGoalSettingFunctionality -->
+    </test> <!-- TestChrome -->
+  </suite> <!-- CodeCademy Suite -->
+</testng-results>
