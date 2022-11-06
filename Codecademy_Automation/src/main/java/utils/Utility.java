@@ -31,7 +31,7 @@ public class Utility {
 	    
 	    File src= ts.getScreenshotAs(OutputType.FILE);
 		
-		File dest= new File("D:\\ST\\Automation\\Automation Screenshots\\"+testID+".png"+formattedDate+".jpg");
+		File dest= new File("C:\\Users\\Akshay Shelke\\OneDrive\\Desktop\\Automation Screenshots\\"+testID+".png"+formattedDate+".jpg");
 		
 		FileHandler.copy(src,dest);
 	}
