@@ -47,9 +47,6 @@ public class TNGVerifyAddWorkSpaceAndSearchFunction {
 	@Parameters ("browser")
 	@BeforeTest
     public void launchTheBrowser(String browserName) {
-//		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
-//		ExtentReports extend = new ExtentReports();
-//		extend.attachReporter(reporter);
 
 		if(browserName.equals("Chrome")) 
 		{
