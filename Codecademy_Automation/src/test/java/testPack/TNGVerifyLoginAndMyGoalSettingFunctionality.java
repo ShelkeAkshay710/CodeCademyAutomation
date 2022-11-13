@@ -19,6 +19,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import pages.GoalSettingPage;
 import pages.HomePage;
 import pages.LogInPage;
@@ -34,11 +38,17 @@ public class TNGVerifyLoginAndMyGoalSettingFunctionality {
 	private HomePage homePage ;
 	private GoalSettingPage goalSettingPage; 
 	private int testID;
+//	static ExtentTest test;
+//	static ExtentHtmlReporter reporter;
 	
 	@Parameters ("browser")
 	@BeforeTest
     public void launchTheBrowser(String browserName) {
 	    
+//		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+//		ExtentReports extend = new ExtentReports();
+//		extend.attachReporter(reporter);
+
 		if(browserName.equals("Chrome")) 
 		{
 			driver=Base.openChromeBrowser();

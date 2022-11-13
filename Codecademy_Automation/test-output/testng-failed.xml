@@ -15,6 +15,33 @@
           <include name="clearObjects"/>
         </methods>
       </class> <!-- testPack.TNGVerifyLoginAndMyGoalSettingFunctionality -->
+      <class name="testPack.TNGVerifyAddWorkSpaceAndSearchFunction">
+        <methods>
+          <include name="createPOMObjects"/>
+          <include name="closeTheBrowser"/>
+          <include name="logIn"/>
+          <include name="verifySearchFunction"/>
+          <include name="launchTheBrowser"/>
+          <include name="logOut"/>
+          <include name="clearObjects"/>
+        </methods>
+      </class> <!-- testPack.TNGVerifyAddWorkSpaceAndSearchFunction -->
     </classes>
   </test> <!-- TestChrome(failed) -->
+  <test thread-count="2" parallel="classes" name="TestEdge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testPack.TNGVerifyAddWorkSpaceAndSearchFunction">
+        <methods>
+          <include name="createPOMObjects"/>
+          <include name="closeTheBrowser"/>
+          <include name="logIn"/>
+          <include name="verifySearchFunction"/>
+          <include name="launchTheBrowser"/>
+          <include name="logOut"/>
+          <include name="clearObjects"/>
+        </methods>
+      </class> <!-- testPack.TNGVerifyAddWorkSpaceAndSearchFunction -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
 </suite> <!-- Failed suite [CodeCademy Suite] -->

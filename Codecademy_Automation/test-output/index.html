@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-CodeCademy_Suite" class="navigator-link ">
-                    <span>C:\Users\Akshay Shelke\OneDrive\Desktop\Java FC\Codecademy_Automation\testng.xml</span>
+                    <span>C:\Users\Akshay Shelke\git\CodeCademyAutomation\Codecademy_Automation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-CodeCademy_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,6 +107,16 @@
                         <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyLoginAndMyGoalSettingFunctionality" class="method navigator-link" hash-for-method="verifyMyGoalSetting">verifyMyGoalSetting</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyAddWorkSpaceAndSearchFunction" class="method navigator-link" hash-for-method="verifySearchFunction">verifySearchFunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyAddWorkSpaceAndSearchFunction" class="method navigator-link" hash-for-method="verifySearchFunction">verifySearchFunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-CodeCademy_Suite -->
                   </li>
                   <li>
@@ -118,7 +128,27 @@
                     <div class="method-list-content passed suite-CodeCademy_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyAddWorkSpaceAndSearchFunction" class="method navigator-link" hash-for-method="verifyAddWorkspace">verifyAddWorkspace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyAddWorkSpaceAndSearchFunction" class="method navigator-link" hash-for-method="verifyAddWorkspace">verifyAddWorkspace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyLoginAndMyGoalSettingFunctionality" class="method navigator-link" hash-for-method="verifyLogin">verifyLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyLoginAndMyGoalSettingFunctionality" class="method navigator-link" hash-for-method="verifyLogin">verifyLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CodeCademy_Suite" title="testPack.TNGVerifyLoginAndMyGoalSettingFunctionality" class="method navigator-link" hash-for-method="verifyMyGoalSetting">verifyMyGoalSetting</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-CodeCademy_Suite -->
@@ -144,12 +174,110 @@
                   <a name="verifyMyGoalSetting">
                   </a> <!-- verifyMyGoalSetting -->
                   <span class="method-name">verifyMyGoalSetting</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at testPack.TNGVerifyLoginAndMyGoalSettingFunctionality.verifyMyGoalSetting(TNGVerifyLoginAndMyGoalSettingFunctionality.java:101)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Edit&apos;]&quot;}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-J3M6P33&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Akshay Shelke\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:59480}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a87acddc80d80c72b6760ae6fbf02ae5
+*** Element info: {Using=xpath, value=//a[text()=&apos;Edit&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at pages.HomePage.clickEditLink(HomePage.java:42)
+	at testPack.TNGVerifyLoginAndMyGoalSettingFunctionality.verifyMyGoalSetting(TNGVerifyLoginAndMyGoalSettingFunctionality.java:102)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CodeCademy_Suite-class-failed -->
+          <div class="suite-CodeCademy_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunction">
+                  </a> <!-- verifySearchFunction -->
+                  <span class="method-name">verifySearchFunction</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-J3M6P33&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Akshay Shelke\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8a20c370177a850672cbca266faac2e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at pages.HomePage.enterAndSubmitSearchBox(HomePage.java:54)
+	at testPack.TNGVerifyAddWorkSpaceAndSearchFunction.verifySearchFunction(TNGVerifyAddWorkSpaceAndSearchFunction.java:110)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunction">
+                  </a> <!-- verifySearchFunction -->
+                  <span class="method-name">verifySearchFunction</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;header-search-bar&apos;]&quot;}
+  (Session info: MicrosoftEdge=107.0.1418.42)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-J3M6P33&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59840}, msedge: {msedgedriverVersion: 106.0.1370.52 (dc5b94d8835a..., userDataDir: C:\Users\Akshay Shelke\AppD...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8ab10155d753af3f808954e86c13849
+*** Element info: {Using=xpath, value=//input[@id=&apos;header-search-bar&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at pages.HomePage.enterAndSubmitSearchBox(HomePage.java:54)
+	at testPack.TNGVerifyAddWorkSpaceAndSearchFunction.verifySearchFunction(TNGVerifyAddWorkSpaceAndSearchFunction.java:110)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -168,12 +296,48 @@
                   <span class="method-name">verifyLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin">
+                  </a> <!-- verifyLogin -->
+                  <span class="method-name">verifyLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyGoalSetting">
+                  </a> <!-- verifyMyGoalSetting -->
+                  <span class="method-name">verifyMyGoalSetting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CodeCademy_Suite-class-passed -->
+          <div class="suite-CodeCademy_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddWorkspace">
+                  </a> <!-- verifyAddWorkspace -->
+                  <span class="method-name">verifyAddWorkspace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddWorkspace">
+                  </a> <!-- verifyAddWorkspace -->
+                  <span class="method-name">verifyAddWorkspace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CodeCademy_Suite-class-passed -->
         </div> <!-- panel CodeCademy_Suite -->
         <div panel-name="test-xml-CodeCademy_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Akshay Shelke\OneDrive\Desktop\Java FC\Codecademy_Automation\testng.xml</span>
+            <span class="header-content">C:\Users\Akshay Shelke\git\CodeCademyAutomation\Codecademy_Automation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,8 +348,16 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testPack.TNGVerifyLoginAndMyGoalSettingFunctionality&quot;/&gt;
+      &lt;class name=&quot;testPack.TNGVerifyAddWorkSpaceAndSearchFunction&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestChrome --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;TestEdge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testPack.TNGVerifyLoginAndMyGoalSettingFunctionality&quot;/&gt;
+      &lt;class name=&quot;testPack.TNGVerifyAddWorkSpaceAndSearchFunction&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestEdge --&gt;
 &lt;/suite&gt; &lt;!-- CodeCademy Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,7 +369,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestChrome (1 class)</span>
+                <span class="test-name">TestChrome (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestEdge (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,20 +398,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyMyGoalSetting')
-data.setCell(0, 2, 'testPack.TNGVerifyLoginAndMyGoalSettingFunctionality')
-data.setCell(0, 3, 6766);
+data.setCell(0, 1, 'verifyAddWorkspace')
+data.setCell(0, 2, 'testPack.TNGVerifyAddWorkSpaceAndSearchFunction')
+data.setCell(0, 3, 11927);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLogin')
-data.setCell(1, 2, 'testPack.TNGVerifyLoginAndMyGoalSettingFunctionality')
-data.setCell(1, 3, 36);
+data.setCell(1, 1, 'verifySearchFunction')
+data.setCell(1, 2, 'testPack.TNGVerifyAddWorkSpaceAndSearchFunction')
+data.setCell(1, 3, 11234);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAddWorkspace')
+data.setCell(2, 2, 'testPack.TNGVerifyAddWorkSpaceAndSearchFunction')
+data.setCell(2, 3, 11103);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyMyGoalSetting')
+data.setCell(3, 2, 'testPack.TNGVerifyLoginAndMyGoalSettingFunctionality')
+data.setCell(3, 3, 8824);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySearchFunction')
+data.setCell(4, 2, 'testPack.TNGVerifyAddWorkSpaceAndSearchFunction')
+data.setCell(4, 3, 6703);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyMyGoalSetting')
+data.setCell(5, 2, 'testPack.TNGVerifyLoginAndMyGoalSettingFunctionality')
+data.setCell(5, 3, 5119);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLogin')
+data.setCell(6, 2, 'testPack.TNGVerifyLoginAndMyGoalSettingFunctionality')
+data.setCell(6, 3, 268);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLogin')
+data.setCell(7, 2, 'testPack.TNGVerifyLoginAndMyGoalSettingFunctionality')
+data.setCell(7, 3, 97);
 window.suiteTableData['CodeCademy_Suite']= { tableData: data, tableDiv: 'times-div-CodeCademy_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-CodeCademy_Suite">
               </div> <!-- times-div-CodeCademy_Suite -->
             </div> <!-- times-div -->
@@ -262,48 +461,235 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchTheBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchTheBrowser(Chrome)</span>
+                <span class="method-start">1742 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">1627 ms</span>
+                <span class="method-start">3115 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">3115 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">logIn</span>
-                <span class="method-start">1699 ms</span>
+                <span class="method-start">3217 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">logIn</span>
+                <span class="method-start">3217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">6097 ms</span>
+                <span class="method-start">13860 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOut([TestResult name=verifyLogin status=SUCCESS method=TNGVerifyLoginAndMyGoalSettingFunctionality.verif...)</span>
-                <span class="method-start">6136 ms</span>
+                <span class="method-start">13962 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddWorkspace</span>
+                <span class="method-start">14176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifyAddWorkspace status=SUCCESS method=TNGVerifyAddWorkSpaceAndSearchFunction.ver...)</span>
+                <span class="method-start">25283 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">logIn</span>
-                <span class="method-start">19134 ms</span>
+                <span class="method-start">26629 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">logIn</span>
+                <span class="method-start">30162 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyMyGoalSetting</span>
-                <span class="method-start">21735 ms</span>
+                <span class="method-start">34029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOut([TestResult name=verifyMyGoalSetting status=FAILURE method=TNGVerifyLoginAndMyGoalSettingFunctionali...)</span>
-                <span class="method-start">28505 ms</span>
+                <span class="method-start">39152 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySearchFunction</span>
+                <span class="method-start">39293 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">45055 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifySearchFunction status=FAILURE method=TNGVerifyAddWorkSpaceAndSearchFunction.v...)</span>
+                <span class="method-start">46000 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearObjects</span>
-                <span class="method-start">31569 ms</span>
+                <span class="method-start">49458 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">31570 ms</span>
+                <span class="method-start">49464 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeTheBrowser</span>
+                <span class="method-start">49862 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchTheBrowser(Edge)</span>
+                <span class="method-start">66197 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchTheBrowser(Edge)</span>
+                <span class="method-start">69102 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">72079 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">72079 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">logIn</span>
+                <span class="method-start">72082 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">logIn</span>
+                <span class="method-start">72082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin</span>
+                <span class="method-start">77528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifyLogin status=SUCCESS method=TNGVerifyLoginAndMyGoalSettingFunctionality.verif...)</span>
+                <span class="method-start">77797 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddWorkspace</span>
+                <span class="method-start">79219 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">logIn</span>
+                <span class="method-start">87077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMyGoalSetting</span>
+                <span class="method-start">90758 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifyAddWorkspace status=SUCCESS method=TNGVerifyAddWorkSpaceAndSearchFunction.ver...)</span>
+                <span class="method-start">91148 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">logIn</span>
+                <span class="method-start">94360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySearchFunction</span>
+                <span class="method-start">98555 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifyMyGoalSetting status=SUCCESS method=TNGVerifyLoginAndMyGoalSettingFunctionali...)</span>
+                <span class="method-start">99584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">102189 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyAddWorkSpaceAndSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logOut([TestResult name=verifySearchFunction status=FAILURE method=TNGVerifyAddWorkSpaceAndSearchFunction.v...)</span>
+                <span class="method-start">109789 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">clearObjects</span>
+                <span class="method-start">112696 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">closeTheBrowser</span>
+                <span class="method-start">112698 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TNGVerifyLoginAndMyGoalSettingFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeTheBrowser</span>
+                <span class="method-start">113044 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
